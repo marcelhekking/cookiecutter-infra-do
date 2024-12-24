@@ -1,0 +1,16 @@
+---
+  - hosts: {{cookiecutter.domain}}
+    become: true
+    gather_facts: no
+
+    tasks:
+      - name: Generate an OpenSSH keypair with the default values (4096 bits, rsa)
+        community.crypto.openssh_keypair:
+          path: ~/.ssh/id_rsa
+      - name: Set authorized key taken from file
+        shell: cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+      - name: Store private SSH key from Droplet in local file `private_key_droplet`
+        ansible.builtin.fetch:
+          src: ~/.ssh/id_rsa
+          dest: private_key_droplet
+          flat: yes

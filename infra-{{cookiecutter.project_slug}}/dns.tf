@@ -12,6 +12,7 @@ resource "digitalocean_record" "www-2" {
   name   = "www"
   value  = digitalocean_droplet.{{cookiecutter.project_slug}}.ipv4_address
 }
+{% if cookiecutter.use_email == "y" %}
 
 resource "digitalocean_record" "mx" {
   domain = var.domain_name
@@ -51,3 +52,4 @@ resource "digitalocean_record" "webmail" {
   name     = "webmail"
   value  = "ox.hostnet.nl."
 }
+{% endif %}

@@ -28,7 +28,7 @@ terraform apply -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
 terraform destroy -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
 ```
 
-## Setting up and rolling out a website with site {{cookiecutter.domain}}
+## Setting up and rolling out a website to "{{cookiecutter.domain}}"
 
 ### Used tutorials/instructions from the internet
 

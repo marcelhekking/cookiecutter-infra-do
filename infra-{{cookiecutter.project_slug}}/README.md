@@ -13,19 +13,19 @@ Terraform is used to create and spin up a Digital Ocean Droplet. Ansible is then
 ### Plan the creation/change of a Droplet
 
 ```bash
-terraform plan -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
+terraform plan -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/{{cookiecutter.do_ssh_key_name}}"
 ```
 
 ### Create/change a Droplet
 
 ```bash
-terraform apply -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
+terraform apply -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/{{cookiecutter.do_ssh_key_name}}"
 ```
 
 ### Destroy a Droplet
 
 ```bash
-terraform destroy -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
+terraform destroy -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/{{cookiecutter.do_ssh_key_name}}"
 ```
 
 ## Setting up and rolling out a website to "{{cookiecutter.domain}}"
@@ -83,7 +83,7 @@ terraform destroy -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
 ### Setup new Digital Ocean Droplet
 
 ```bash
-terraform apply -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/id_rsa"
+terraform apply -var "do_token=$DO_PAT" -var "pvt_key=$HOME/.ssh/{{cookiecutter.do_ssh_key_name}}"
 ```
 
 Check if droplet is up and ready to go by pinging `{{cookiecutter.domain}}`. If ready, log into the droplet once with `ssh root@{{cookiecutter.domain}}`. This will add `{{cookiecutter.domain}}` to the list of known hosts. This should be performed before running any Ansible file. Then run the Ansible file that configures Nginx and Letsencrypt:

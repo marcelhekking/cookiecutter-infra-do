@@ -1,8 +1,8 @@
 {
   "project_name": "Your project name",
-  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '-')|replace('.', '-')|trim() }}",
   "description": "Terraform code to role out a simple web server on Digital Ocean",
   "domain": "example.com",
+  "project_slug": "{{ cookiecutter.domain.lower().split('.')[0] }}",
   "do_ssh_key_name": "do_ssh_key_name",
   "do_context": "do_context",
   "do_pat": "do_pat",

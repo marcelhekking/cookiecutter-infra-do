@@ -72,7 +72,7 @@ pulumi destroy
 
 ### Prerequisites
 
-- Since Pulumi is a Python package, this package should be installed. If you `uv` installed on your machine you could easily do this with
+- Since Pulumi is a Python package, this package should be installed. If you have [`uv`](https://github.com/astral-sh/uv) installed on your machine you could easily do this with
 
   ```bash
   uv sync

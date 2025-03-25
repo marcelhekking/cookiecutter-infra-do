@@ -1,4 +1,4 @@
-name: infra-{{cookiecutter.project_slug}}
+name: Pulumi IaaC for project "{{cookiecutter.project_name}}"
 description: A minimal DigitalOcean Python Pulumi program
 runtime:
   name: python

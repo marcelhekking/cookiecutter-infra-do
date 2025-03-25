@@ -4,5 +4,6 @@
   "domain_name": "example.com",
   "project_slug": "{{ cookiecutter.domain_name.lower().split('.')[0] }}",
   "use_email": "n",
+  "dkim_value": "your_dkim_value",
   "_copy_without_render": ["ansible/templates/nginx-le.j2", "ansible/templates/nginx-http.j2"]
 }

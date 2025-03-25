@@ -100,7 +100,7 @@ dkim_record = do.DnsRecord(
     domain=domain_name,
     type="TXT",
     name="default._domainkey",
-    value="v=DKIM1; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAouILmrc1JPOXs4fWdPKi365yVeve4Y15RwYpTgbIwKCwo0S0Z+ucrzNbaFfM26J38hLfH4KbWhCALHRVsVg3+iv4pxsfLwAJP7fdm+6xKo64gih5X8UVYrQhs863owBMQWl9CA5B2IhSCqWtzNX2OGe8EViCZqQS0Fdlw3tfnDZzerj5aO7ZNYMfNmg+zE6V0ycz226z9Pq3OPLG7kVVjmv7GRjHOVsTofui2678HtQ4jFAtGp5V6itwkNX5tPuJIH6TNDRQCzwPPY7wRpm9X30JCcRuf14YTVBJ1uWLgt+wnde6ELKD7EXBgR8eoozpVn9mYWVQWfcJN8UH7rQHjwIDAQAB",  # noqa
+    value="v=DKIM1; p={{cookiecutter.dkim_value}}",  # noqa
 )
 
 # Export the Droplet IP address and domain name

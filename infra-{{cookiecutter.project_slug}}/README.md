@@ -81,7 +81,7 @@ pulumi destroy
   This will install the right Python version and create a virtual environment `.venv` with the required Python packages installed.
 
 - [Ansible](https://ansible.readthedocs.io/) installed and {{cookiecutter.domain_name}} added as an Ansible host locally in `/etc/ansible/hosts` (see tutorial under 'On Letsencrypt and Ansible'),
-- [Pulumi](https://www.pulumi.com/) installed and a Pulumi account with an Enviornment holding the following variables:
+- [Pulumi](https://www.pulumi.com/) installed and a Pulumi account with a stack called `infra-{{cookiecutter.project_slug}}` , holding the following variables:
   - DATABASE="postgres"
   - DEBUG="0"
   - DOMAIN_NAME="{{cookiecutter.domain_name}}"

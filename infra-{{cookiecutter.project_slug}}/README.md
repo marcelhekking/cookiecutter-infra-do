@@ -23,14 +23,14 @@ With Pulumi a Digital Ocean droplet can be created, just like Terraform. The dif
   - To add the domain name to the Pulumi config as a secret:
 
   ```bash
-      pulumi config infra-{{cookiecutter.slug}}:domain_name <SSH_KEY_NAME>
+      pulumi config infra-{{cookiecutter.project_slug}}:domain_name <SSH_KEY_NAME>
   ```
 
 - infra-{{cookiecutter.project_slug}}:pvt_key_path (path to an SSH private key on the host, enabling login to the Droplet from the machine you run Pulumi on.)
   - To add the path to a private SSH key to the Pulumi config:
 
   ```bash
-      pulumi config infra-{{cookiecutter.slug}}:pvt_key_path <SSH_KEY_PATH>
+      pulumi config infra-{{cookiecutter.project_slug}}:pvt_key_path <SSH_KEY_PATH>
   ```
 
 ### Create a Droplet

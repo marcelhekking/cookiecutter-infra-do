@@ -1,5 +1,5 @@
 [project]
-name = "infra- {{cookiecutter.domain_name}}"
+name = "infra-{{cookiecutter.project_slug}}"
 version = "0.1.0"
 description = "Pulumi-based IaaC for the  {{cookiecutter.domain_name}} website"
 requires-python = ">=3.13"

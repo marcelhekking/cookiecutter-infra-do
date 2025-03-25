@@ -1,0 +1,18 @@
+
+version: "3"
+
+tasks:
+  ruff-check:
+    cmds:
+     - uv run ruff check
+    desc: "Run a ruff check"
+
+  ruff-fix:
+      cmds:
+       - uv run ruff check --fix
+      desc: "Run a ruff check and fix all fixable findings"
+
+  ruff-format:
+    cmds:
+     - uv run ruff format
+    desc: "Run ruff formatter on all files"

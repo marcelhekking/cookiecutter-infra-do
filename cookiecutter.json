@@ -1,11 +1,8 @@
 {
   "project_name": "Your project name",
-  "description": "Terraform code to role out a simple web server on Digital Ocean",
-  "domain": "example.com",
-  "project_slug": "{{ cookiecutter.domain.lower().split('.')[0] }}",
-  "do_ssh_key_name": "do_ssh_key_name",
-  "do_context": "do_context",
-  "do_pat": "do_pat",
+  "description": "Pulumi code to role out a simple web server on Digital Ocean",
+  "domain_name": "example.com",
+  "project_slug": "{{ cookiecutter.domain_name.lower().split('.')[0] }}",
   "use_email": "n",
   "_copy_without_render": ["ansible/templates/nginx-le.j2", "ansible/templates/nginx-http.j2"]
 }

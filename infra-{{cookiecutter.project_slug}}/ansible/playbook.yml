@@ -1,5 +1,5 @@
 ---
-  - hosts: {{cookiecutter.domain}}
+  - hosts: {{cookiecutter.domain_name}}
     become: true
     gather_facts: no
 

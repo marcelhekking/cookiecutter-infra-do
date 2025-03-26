@@ -1,7 +1,9 @@
 ansible/private_key_droplet
 
 *.pyc
-venv/
+.venv/
 
-ansible/private_key_droplet
-
+__pycache__/
+*.egg-info/
+*.egg
+*.log

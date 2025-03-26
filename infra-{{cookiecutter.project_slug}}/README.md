@@ -35,8 +35,8 @@ This repo contains the necessary files to create a Digital Ocean droplet that wi
 
   This will install the right Python version and create a virtual environment `.venv` with the required Python packages installed.
 
-- [Ansible](https://ansible.readthedocs.io/) installed and {{cookiecutter.domain_name}} added as an Ansible host locally in `/etc/ansible/hosts` (see tutorial under 'On Letsencrypt and Ansible'),
-- [Pulumi](https://www.pulumi.com/) installed and a Pulumi account with a stack called `infra-{{cookiecutter.project_slug}}`.
+- [Ansible](https://ansible.readthedocs.io/) locally installed and {{cookiecutter.domain_name}} added as an Ansible host locally in `/etc/ansible/hosts` (see tutorial under 'On Letsencrypt and Ansible'),
+- [Pulumi](https://www.pulumi.com/) locally installed and a Pulumi cloud account.
 - An account on [Digital Ocean](<https://www.digitalocean.com/>) (DO),
 - A Digital Ocean Personal Access Token (DO_PAT)
 - A registered domain name,

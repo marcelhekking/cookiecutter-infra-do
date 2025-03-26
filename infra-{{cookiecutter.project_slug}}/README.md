@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This repo contains the necessary files to create a Digital Ocean droplet that will run the "{{cookiecutter.project_name}}" website on https using Letsencrypt to manage the SSL certificates. The droplet will run two services in separate containers (Gunicorn webservice serving Django and a Postgress database service) with Nginx on the host machine as a proxy-server.
+This repo contains the necessary files to create a Digital Ocean droplet that will run the "{{cookiecutter.project_name}}" website on https using Letsencrypt to manage the SSL certificates. There is another cookiecutter template available that can set up the necessary code for such a website (<https://github.com/marcelhekking/cookiecutter-wagtail-tailwind>)
+
 [Pulumi](https://www.pulumi.com/) is used to create and spin up a Digital Ocean Droplet. [Ansible](https://ansible.readthedocs.io/) is then used to:
 
 - install SSL certificates by using Letsencrypt,

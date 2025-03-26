@@ -1,4 +1,4 @@
-# Cookiecutter template to install Droplets on Digital Ocean using Pulumi and Ansible.
+# Cookiecutter template to install Droplets on Digital Ocean using Pulumi and Ansible
 
 ## Introduction
 
